@@ -1,0 +1,112 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
+<title>Markisenguide Lead-Kampagne · FT Work &amp; Design</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@700;800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--paper:#faf7f1;--green:#2e3e34;--deep:#1b251f;--gold:#bda063;--ink:#26302a;--soft:#5d6a5d;--line:rgba(46,62,52,.14)}
+body{font-family:'Hanken Grotesk',Arial,sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased}
+.disp{font-family:'Schibsted Grotesk',sans-serif;font-weight:800;letter-spacing:-.025em;line-height:1.02}
+.mono{font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.22em}
+.head{background:var(--deep);color:#fff;padding:54px 24px 48px;text-align:center}
+.head .brand{font-family:'Schibsted Grotesk';font-weight:800;font-size:15px;letter-spacing:.24em;text-transform:uppercase;color:#fff}
+.head .k{font-size:12px;color:var(--gold);font-weight:700;margin:22px 0 12px}
+.head h1{font-size:clamp(30px,5vw,52px);color:#fff;max-width:18ch;margin:0 auto}
+.head p{margin:16px auto 0;max-width:54ch;color:#cfd6cc;font-size:17px;line-height:1.5}
+.flow{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.flow .st{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:100px;padding:9px 18px;font-size:13px;color:#e9ece5;font-weight:600}
+.flow .ar{color:var(--gold);align-self:center;font-weight:700}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+.sec-h{display:flex;align-items:baseline;gap:16px;margin-bottom:8px}
+.sec-h .no{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--gold);letter-spacing:.18em}
+.sec-h h2{font-family:'Schibsted Grotesk';font-weight:800;font-size:clamp(24px,3vw,36px);letter-spacing:-.02em;color:var(--deep)}
+.sec-sub{color:var(--soft);font-size:16px;line-height:1.55;max-width:64ch;margin-bottom:34px}
+/* guide */
+.guide{display:flex;gap:48px;align-items:center;flex-wrap:wrap}
+.guide img{width:min(560px,100%);height:auto;flex:1 1 360px}
+.guide .gx{flex:1 1 320px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;font-family:'Schibsted Grotesk';font-weight:800;font-size:16px;text-decoration:none;padding:15px 28px;border-radius:100px;margin-top:18px}
+/* ads */
+.grid1{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.grid1 img{width:100%;border-radius:10px;display:block;box-shadow:0 8px 24px rgba(27,37,31,.12)}
+.lbl{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:18px 0 12px}
+.row9{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:18px}
+.row9 img{width:100%;border-radius:10px;display:block;box-shadow:0 8px 24px rgba(27,37,31,.12)}
+/* emails */
+.mails{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;align-items:start}
+.mailcol .cap{margin-bottom:12px}
+.mailcol .tag{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.mailcol .subj{font-family:'Schibsted Grotesk';font-weight:700;font-size:18px;color:var(--deep);margin-top:5px}
+.mailcol img{width:100%;border-radius:10px;display:block;box-shadow:0 10px 30px rgba(27,37,31,.16)}
+.foot{background:var(--deep);color:#a9b5a9;text-align:center;padding:30px 24px;font-size:13px}
+.foot a{color:#cdb888;text-decoration:none}
+/* gate */
+.gate{position:fixed;inset:0;z-index:9999;background:var(--deep);display:flex;align-items:center;justify-content:center}
+.gatebox{background:#fff;border-radius:14px;padding:36px 32px;width:350px;max-width:90%;text-align:center;box-shadow:0 24px 70px rgba(0,0,0,.45)}
+.gatebox .k{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.gatebox h2{font-family:'Schibsted Grotesk';font-weight:800;font-size:21px;margin:10px 0 18px;color:var(--deep)}
+.gatebox input{width:100%;padding:13px 14px;font-size:15px;border:1px solid #ccced0;border-radius:8px;font-family:inherit}
+.gatebox button{width:100%;margin-top:12px;padding:13px;font-size:15px;font-weight:800;font-family:'Schibsted Grotesk';color:#fff;background:var(--green);border:0;border-radius:8px;cursor:pointer}
+.gatebox .err{color:#b23;font-size:13px;margin-top:10px;min-height:16px}
+@media(max-width:640px){.guide{gap:24px}}
+</style></head><body>
+<div class="gate" id="gate"><div class="gatebox">
+  <div class="k">FT Work &amp; Design · Vorschau</div>
+  <h2>Geschützte Vorschau</h2>
+  <input id="pw" type="password" placeholder="Passwort" autofocus onkeydown="if(event.key==='Enter')unlock()">
+  <button onclick="unlock()">Ansehen</button>
+  <div class="err" id="err"></div>
+</div></div>
+<script>
+function unlock(){var v=document.getElementById('pw').value;
+ if(v==='markise'){sessionStorage.setItem('ok','1');document.getElementById('gate').style.display='none';}
+ else{document.getElementById('err').textContent='Falsches Passwort.';}}
+if(sessionStorage.getItem('ok')==='1'){document.addEventListener('DOMContentLoaded',function(){var g=document.getElementById('gate');if(g)g.style.display='none';});}
+</script>
+
+<div class="head">
+  <div class="brand">FT Work &amp; Design</div>
+  <div class="k mono">Lead-Gen-Kampagne · Markisen Eifel</div>
+  <h1 class="disp">Der Markisenguide als Anfragen-Motor</h1>
+  <p>Eine Kampagne, drei Bausteine: ein kostenloser Guide als Köder, Meta-Anzeigen, die ihn bewerben, und eine E-Mail-Automation, die aus Downloads Beratungstermine macht.</p>
+  <div class="flow">
+    <span class="st">Anzeige</span><span class="ar">→</span>
+    <span class="st">Gratis-Guide</span><span class="ar">→</span>
+    <span class="st">E-Mail-Automation</span><span class="ar">→</span>
+    <span class="st">Beratung</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <div class="sec-h"><span class="no">01</span><h2>Der Lead Magnet</h2></div>
+    <p class="sec-sub">Der „ultimative Markisenguide für die Eifel". Vier Grundtypen im Vergleich, worauf es bei Qualität ankommt und die häufigsten Fehler beim Kauf. Das ist der Wert, den Interessenten gegen ihre Kontaktdaten bekommen.</p>
+    <div class="guide">
+      <img src="assets/guide-fan.png" alt="Markisenguide">
+      <div class="gx">
+        <p style="font-size:17px;line-height:1.6;color:var(--ink)">11 Seiten, im Querformat gestaltet, mit echten Projektfotos und einer Entscheidungs-Matrix. Positioniert FT Work &amp; Design vom ersten Kontakt an als Fachbetrieb.</p>
+        <a class="btn" href="assets/Markisenguide-Eifel.pdf" target="_blank">Guide ansehen (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-h"><span class="no">02</span><h2>Die Anzeigen (Meta)</h2></div>
+    <p class="sec-sub">Fünf Copy-Konzepte, die Menschen ansprechen, die gerade über eine Markise nachdenken. Jede Anzeige zeigt das Produkt und den Guide und führt auf den kostenlosen Download. Im Feed-Format (1:1) und für Stories/Reels (9:16).</p>
+    <div class="lbl">Feed · 1:1</div>
+    <div class="grid1"><img src="assets/ad_01-nachdenken_1x1.png" alt="Sie denken über eine Markise nach?"><img src="assets/ad_02-entscheidung_1x1.png" alt="Bevor Sie sich für eine Markise entscheiden."><img src="assets/ad_05-typ_1x1.png" alt="Welche Markise passt zu Ihrer Terrasse?"><img src="assets/ad_07-vorbereitet_1x1.png" alt="Gut vorbereitet zur richtigen Markise."><img src="assets/ad_08-ankommt_1x1.png" alt="Worauf es bei einer Markise wirklich ankommt."></div>
+    <div class="lbl">Stories &amp; Reels · 9:16</div>
+    <div class="row9"><img src="assets/ad_01-nachdenken_9x16.png" alt="Sie denken über eine Markise nach?"><img src="assets/ad_02-entscheidung_9x16.png" alt="Bevor Sie sich für eine Markise entscheiden."><img src="assets/ad_05-typ_9x16.png" alt="Welche Markise passt zu Ihrer Terrasse?"><img src="assets/ad_07-vorbereitet_9x16.png" alt="Gut vorbereitet zur richtigen Markise."><img src="assets/ad_08-ankommt_9x16.png" alt="Worauf es bei einer Markise wirklich ankommt."></div>
+  </section>
+
+  <section style="border-bottom:none">
+    <div class="sec-h"><span class="no">03</span><h2>Die E-Mail-Automation</h2></div>
+    <p class="sec-sub">Sobald jemand den Guide anfordert, startet eine dreiteilige Sequenz über drei Tage. Erst der Download, dann konkreter Mehrwert aus dem Guide, dann der Weg zur kostenlosen Beratung. Jede Mail mit Felix als Absender.</p>
+    <div class="mails"><div class="mailcol"><div class="cap"><div class="tag">E-Mail · Tag 0</div><div class="subj">Ihr Markisenguide für die Eifel</div></div><img src="assets/email1_download.png" alt="Ihr Markisenguide für die Eifel"></div><div class="mailcol"><div class="cap"><div class="tag">E-Mail · Tag 1</div><div class="subj">Diese 3 Fehler kosten am meisten</div></div><img src="assets/email2_fehler.png" alt="Diese 3 Fehler kosten am meisten"></div><div class="mailcol"><div class="cap"><div class="tag">E-Mail · Tag 2</div><div class="subj">Welche Markise passt zu Ihrer Terrasse?</div></div><img src="assets/email3_typen.png" alt="Welche Markise passt zu Ihrer Terrasse?"></div></div>
+  </section>
+</div>
+
+<div class="foot">FT Work &amp; Design · Markisen Eifel · Vorschau für die interne Abstimmung &nbsp;·&nbsp; <a href="https://ft-workanddesign.de">ft-workanddesign.de</a></div>
+</body></html>
