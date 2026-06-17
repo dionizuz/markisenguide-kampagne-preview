@@ -120,16 +120,16 @@ if(sessionStorage.getItem('ftwd_ok')==='1'){document.addEventListener('DOMConten
 
   <section>
     <h2>03 · Anrede &amp; Personalisierung</h2>
-    <h3>Vorname mit sauberem Fallback</h3>
-    <p class="lead">Alle drei Mails öffnen mit <code>Hallo {{Vorname}},</code>. Aus dem Formular kommen Vor- und Nachname getrennt rein. Problem: nicht jeder gibt einen sauberen Vornamen an.</p>
+    <h3>Vor- und Nachname, mit sauberem Fallback</h3>
+    <p class="lead">Alle drei Mails öffnen mit <code>Hallo {{Vorname}} {{Nachname}},</code>. Solange keine Herr/Frau-Anrede vorliegt, nutzen wir wie im CRM-Standard beide Namen. Aus dem Formular kommen Vor- und Nachname getrennt rein.</p>
     <ul class="bul">
-      <li><b>Standard:</b> <code>Hallo {{Vorname}},</code></li>
-      <li><b>Fallback (Pflicht):</b> Ist kein Vorname vorhanden, darf es nie <code>Hallo ,</code> rendern. Dann auf <b><code>Guten Tag,</code></b> zurückfallen (Default-Value bzw. Bedingung im Tool setzen).</li>
+      <li><b>Standard:</b> <code>Hallo {{Vorname}} {{Nachname}},</code></li>
+      <li><b>Fallback (Pflicht):</b> Fehlt der Name (oder ist offensichtlich unbrauchbar), darf es nie <code>Hallo ,</code> rendern. Dann auf <b><code>Guten Tag,</code></b> zurückfallen (Default-Value bzw. Bedingung im Tool setzen).</li>
       <li><b>Datenfelder:</b> Vor- <u>und</u> Nachname vom Formular übernehmen und im Kontakt speichern (für Anrede und für Pipedrive).</li>
     </ul>
     <div class="flag">
       <div class="t">Bitte testen</div>
-      Vor dem Live-Schalten je einen Testkontakt mit Vornamen und einen ohne durchschicken und prüfen, dass die Anrede in beiden Fällen sauber aussieht.
+      Vor dem Live-Schalten je einen Testkontakt mit vollständigem Namen und einen ohne durchschicken und prüfen, dass die Anrede in beiden Fällen sauber aussieht.
     </div>
   </section>
 
