@@ -90,6 +90,7 @@ if(sessionStorage.getItem('ftwd_ok')==='1'){document.addEventListener('DOMConten
       <li><span class="k">Aufsetzen</span> heute, <b>17.06.</b> (Janosch) &nbsp;·&nbsp; du bist morgen out of office</li>
       <li><span class="k">Live</span> <b>18.06.</b>, Valentin schaltet scharf</li>
       <li><span class="k">Mail-Dateien</span> <code>email1_download.html</code> · <code>email2_fehler.html</code> · <code>email3_typen.html</code> (final, freigegeben)</li>
+      <li><span class="k">Guide</span> <b>final &amp; gehostet</b> &nbsp;·&nbsp; <a style="color:#fff;font-weight:700;" href="Markisenguide-Eifel.pdf" target="_blank">Markisenguide-Eifel.pdf öffnen</a> (Download-Link ist bereits in den Mails eingesetzt)</li>
     </ul>
   </div>
 
@@ -157,7 +158,7 @@ if(sessionStorage.getItem('ftwd_ok')==='1'){document.addEventListener('DOMConten
     <h2>06 · Links &amp; Variablen zum Einsetzen</h2>
     <h3>Vor dem Versand befüllen</h3>
     <ul class="bul">
-      <li><b>Download-Link:</b> in allen Mails steht der Platzhalter <code>{{GUIDE_DOWNLOAD_URL}}</code>. Durch die finale, gehostete PDF-URL des Guides ersetzen.</li>
+      <li><b>Download-Link:</b> Guide ist final und gehostet, der Link ist in allen 3 Mails bereits eingesetzt: <a href="Markisenguide-Eifel.pdf" target="_blank"><code>.../briefing/Markisenguide-Eifel.pdf</code></a>. (Liegt aktuell auf unserem Preview-Server. Wenn ihr lieber eine Domain-/Tracking-URL wollt, ist das die einzige Stelle zum Austauschen.)</li>
       <li><b>Beratungs-/Angebotsseite (CTA-Buttons):</b> <code>https://www.ft-workanddesign.de/angebot-anfragen/</code> (bereits hinterlegt).</li>
       <li><b>Absender:</b> Felix Till · FT Work &amp; Design, <code>info@ft-workanddesign.de</code>. Reply-To auf dieselbe Adresse.</li>
       <li><b>Assets:</b> liegen im Ordner <code>assets/</code> neben den Mail-Dateien (Logo-Bar, Guide-Visual, Felix-Foto, Lifestyle-/Hero-Bild). Beim Import als Inline-/gehostete Bilder übernehmen.</li>
@@ -168,7 +169,7 @@ if(sessionStorage.getItem('ftwd_ok')==='1'){document.addEventListener('DOMConten
     <h2>07 · Vor dem Aktivieren prüfen</h2>
     <h3>Kurze Checkliste</h3>
     <ul class="bul chk">
-      <li>Download-Link <code>{{GUIDE_DOWNLOAD_URL}}</code> in allen 3 Mails ersetzt</li>
+      <li>Download-Link führt in allen 3 Mails korrekt zum Guide (geöffnet/getestet)</li>
       <li>Anrede-Fallback gesetzt und mit/ohne Vorname getestet</li>
       <li>Telefonfeld im Formular auf optional gestellt</li>
       <li>Tag <span class="pill">Markisen Guide</span> wird automatisch gesetzt</li>
@@ -188,7 +189,7 @@ if(sessionStorage.getItem('ftwd_ok')==='1'){document.addEventListener('DOMConten
         <div class="subj">Ihr Markisenguide für die Eifel</div>
         <div class="pre">Hier ist Ihr Guide. Plus: Kostenlose Beratung, falls Sie unsicher sind.</div>
         <div class="det"><b>Zweck:</b> Guide ausliefern, erster weicher Beratungsimpuls.</div>
-        <div class="det"><b>CTA:</b> Markisenguide herunterladen → <code>{{GUIDE_DOWNLOAD_URL}}</code></div>
+        <div class="det"><b>CTA:</b> Markisenguide herunterladen → <a href="Markisenguide-Eifel.pdf" target="_blank">Markisenguide-Eifel.pdf</a></div>
         <div class="det"><b>Datei:</b> <code>email1_download.html</code></div>
       </div>
       <div class="frame"><iframe src="email1_download.html" height="1480" scrolling="no" loading="lazy"></iframe></div>
