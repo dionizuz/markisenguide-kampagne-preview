@@ -1,0 +1,226 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Briefing Janosch · Markisenguide E-Mail-Automation · FT Work &amp; Design</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap">
+<style>
+:root{--green:#1a2e1a;--green2:#2d3f2d;--gold:#bda063;--ink:#1a2e1a;--mut:#5d6a5d;--line:#dfe3dc;--bg:#eef0ec;--card:#ffffff}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Lato',Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+a{color:var(--green2)}
+.head{background:var(--green);color:#fff;padding:40px 24px;text-align:center}
+.head .kicker{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:12px}
+.head h1{font-size:30px;font-weight:900;letter-spacing:-.01em}
+.head p{margin-top:10px;font-size:15px;color:#c8d8c8}
+.wrap{max-width:880px;margin:0 auto;padding:30px 20px 70px}
+.tldr{background:var(--green2);color:#fff;border-radius:12px;padding:22px 24px;margin-bottom:34px}
+.tldr h2{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.tldr ul{list-style:none}
+.tldr li{padding:5px 0;font-size:15px;border-top:1px solid rgba(255,255,255,.12)}
+.tldr li:first-child{border-top:0}
+.tldr b{color:#fff}
+.tldr .k{display:inline-block;min-width:118px;color:#a9bda9;font-weight:700}
+section{background:var(--card);border-radius:12px;padding:26px 28px;margin-bottom:22px;box-shadow:0 4px 16px rgba(27,37,31,.06)}
+section>h2{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:4px}
+section>h3{font-size:21px;font-weight:900;margin-bottom:16px;letter-spacing:-.01em}
+p{margin-bottom:12px}
+.lead{font-size:16px;color:#333}
+ul.bul{list-style:none;margin:6px 0 4px}
+ul.bul li{position:relative;padding:7px 0 7px 26px;border-top:1px solid var(--line);font-size:15px}
+ul.bul li:first-child{border-top:0}
+ul.bul li:before{content:"";position:absolute;left:4px;top:15px;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+ul.bul li b{color:var(--green)}
+.flag{background:#fbf8ef;border:1px solid #e7dcc0;border-left:4px solid var(--gold);border-radius:8px;padding:16px 18px;margin:14px 0}
+.flag .t{font-weight:900;color:var(--green);margin-bottom:6px}
+.tbl{width:100%;border-collapse:collapse;font-size:14.5px}
+.tbl th,.tbl td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--mut)}
+.tbl tr td:first-child{font-weight:700;color:var(--green);white-space:nowrap}
+.pill{display:inline-block;background:#eef2ec;color:var(--green);font-size:12px;font-weight:700;padding:3px 9px;border-radius:20px;border:1px solid var(--line)}
+code{background:#f1f3ef;border:1px solid var(--line);border-radius:5px;padding:2px 7px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px;color:#384a38}
+.mailcard{display:flex;gap:22px;align-items:flex-start;border-top:1px solid var(--line);padding:22px 0}
+.mailcard:first-of-type{border-top:0;padding-top:6px}
+.mailcard .meta{flex:1;min-width:0}
+.mailcard .when{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);font-weight:700}
+.mailcard .subj{font-size:18px;font-weight:900;margin:4px 0 2px}
+.mailcard .pre{font-size:14px;color:var(--mut);font-style:italic;margin-bottom:10px}
+.mailcard .det{font-size:14.5px;margin-bottom:8px}
+.mailcard .det b{color:var(--green)}
+.frame{flex:0 0 230px}
+.frame iframe{display:block;border:1px solid var(--line);border-radius:8px;width:230px;background:#F2F2F0;box-shadow:0 6px 18px rgba(27,37,31,.12)}
+.chk li{padding-left:30px}
+.chk li:before{content:"☐";position:absolute;left:2px;top:6px;background:none;width:auto;height:auto;color:var(--green2);font-size:15px}
+.foot{text-align:center;color:var(--mut);font-size:13px;padding:6px 20px}
+.gate{position:fixed;inset:0;z-index:9999;background:var(--green);display:flex;align-items:center;justify-content:center}
+.gatebox{background:#fff;border-radius:12px;padding:34px 30px;width:340px;max-width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.gatebox .k{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700}
+.gatebox h2{font-size:20px;margin:8px 0 16px;color:var(--green)}
+.gatebox input{width:100%;padding:13px 14px;font-size:15px;border:1px solid #ccced0;border-radius:7px;font-family:inherit}
+.gatebox button{width:100%;margin-top:12px;padding:13px;font-size:15px;font-weight:700;color:#fff;background:var(--green2);border:0;border-radius:7px;cursor:pointer;font-family:inherit}
+.gatebox .err{color:#b23;font-size:13px;margin-top:10px;min-height:16px}
+@media(max-width:620px){.mailcard{flex-direction:column}.frame{flex-basis:auto}.frame iframe{width:100%}}
+</style></head><body>
+<div class="gate" id="gate"><div class="gatebox">
+  <div class="k">FT Work &amp; Design · Briefing</div>
+  <h2>Geschützte Ansicht</h2>
+  <input id="pw" type="password" placeholder="Passwort" autofocus onkeydown="if(event.key==='Enter')unlock()">
+  <button onclick="unlock()">Ansehen</button>
+  <div class="err" id="err"></div>
+</div></div>
+<script>
+function unlock(){var v=document.getElementById('pw').value;
+ if(v==='markise'){sessionStorage.setItem('ftwd_ok','1');document.getElementById('gate').style.display='none';}
+ else{document.getElementById('err').textContent='Falsches Passwort.';}}
+if(sessionStorage.getItem('ftwd_ok')==='1'){document.addEventListener('DOMContentLoaded',function(){var g=document.getElementById('gate');if(g)g.style.display='none';});}
+</script>
+
+<div class="head">
+  <div class="kicker">FT Work &amp; Design · Briefing für Janosch</div>
+  <h1>Markisenguide E-Mail-Automation</h1>
+  <p>Alles, was du zum Aufsetzen der 3-Mail-Sequenz brauchst. Stand: 17.06.2026.</p>
+</div>
+
+<div class="wrap">
+
+  <div class="tldr">
+    <h2>Auf einen Blick</h2>
+    <ul>
+      <li><span class="k">Was</span> 3-teilige E-Mail-Automation nach Download des Markisenguides (Eifel)</li>
+      <li><span class="k">Auslöser</span> Neuer Lead aus dem Lead-Magnet-Formular (Meta Instant Form)</li>
+      <li><span class="k">Aufsetzen</span> heute, <b>17.06.</b> (Janosch) &nbsp;·&nbsp; du bist morgen out of office</li>
+      <li><span class="k">Live</span> <b>18.06.</b>, Valentin schaltet scharf</li>
+      <li><span class="k">Mail-Dateien</span> <code>email1_download.html</code> · <code>email2_fehler.html</code> · <code>email3_typen.html</code> (final, freigegeben)</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>01 · Auslöser &amp; Ziel</h2>
+    <h3>Wann startet die Sequenz</h3>
+    <p class="lead">Trägt sich jemand über das Lead-Magnet-Formular ein (Meta Instant Form, Kampagne "Markisenguide"), bekommt er sofort Mail 1 mit dem Download. Danach laufen zwei Nachfass-Mails. Ziel: vom kostenlosen Guide warm in Richtung Beratung/Ausstellung führen, ohne Verkaufsdruck.</p>
+    <ul class="bul">
+      <li><b>Eintritt:</b> neuer Kontakt aus dem Guide-Formular. Pro Person nur einmal durchlaufen (kein erneutes Triggern bei wiederholtem Eintrag).</li>
+      <li><b>Austritt:</b> Sequenz endet nach Mail 3. (Kein hartes Exit-Kriterium nötig, da nur 3 Mails.)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>02 · Die Sequenz</h2>
+    <h3>3 Mails, Versand über die ersten Tage</h3>
+    <table class="tbl">
+      <tr><th>Mail</th><th>Timing</th><th>Betreff</th><th>Zweck &amp; Haupt-CTA</th></tr>
+      <tr><td>1 · Download</td><td>sofort (Tag 0)</td><td>Ihr Markisenguide für die Eifel</td><td>Guide-Download liefern. CTA: <b>Markisenguide herunterladen</b> + weiche Beratungseinladung.</td></tr>
+      <tr><td>2 · Fehler</td><td>+2 Tage</td><td>Diese 3 Fehler kosten beim Markisenkauf am meisten</td><td>Mehrwert aus dem Guide (Wind, Regen, Ausfall). CTA: <b>Kostenlose Beratung anfragen</b>, Download dezent verlinkt.</td></tr>
+      <tr><td>3 · Typen</td><td>+4 Tage</td><td>Welche Markise passt zu Ihrer Terrasse?</td><td>Orientierung nach Situation. CTA: <b>Kostenlose Beratung anfragen</b> (Link zur Angebotsseite).</td></tr>
+    </table>
+    <div class="flag">
+      <div class="t">Timing ist flexibel</div>
+      Felix ist die genaue Taktung egal (Tag 0 / 2 / 4 oder 0 / 3 / 5). Wichtig ist nur: Mail 1 sofort, dann zwei Nachfasser über die ersten Tage. Nimm Tag 0 / +2 / +4 als Standard, außer Valentin sagt etwas anderes.
+    </div>
+  </section>
+
+  <section>
+    <h2>03 · Anrede &amp; Personalisierung</h2>
+    <h3>Vorname mit sauberem Fallback</h3>
+    <p class="lead">Alle drei Mails öffnen mit <code>Hallo {{Vorname}},</code>. Aus dem Formular kommen Vor- und Nachname getrennt rein. Problem: nicht jeder gibt einen sauberen Vornamen an.</p>
+    <ul class="bul">
+      <li><b>Standard:</b> <code>Hallo {{Vorname}},</code></li>
+      <li><b>Fallback (Pflicht):</b> Ist kein Vorname vorhanden, darf es nie <code>Hallo ,</code> rendern. Dann auf <b><code>Guten Tag,</code></b> zurückfallen (Default-Value bzw. Bedingung im Tool setzen).</li>
+      <li><b>Datenfelder:</b> Vor- <u>und</u> Nachname vom Formular übernehmen und im Kontakt speichern (für Anrede und für Pipedrive).</li>
+    </ul>
+    <div class="flag">
+      <div class="t">Bitte testen</div>
+      Vor dem Live-Schalten je einen Testkontakt mit Vornamen und einen ohne durchschicken und prüfen, dass die Anrede in beiden Fällen sauber aussieht.
+    </div>
+  </section>
+
+  <section>
+    <h2>04 · Formularfelder</h2>
+    <h3>Telefonnummer optional</h3>
+    <ul class="bul">
+      <li><b>E-Mail:</b> Pflichtfeld.</li>
+      <li><b>Vorname / Nachname:</b> übernehmen (siehe Anrede).</li>
+      <li><b>Telefonnummer:</b> <b>optional</b>, kein Pflichtfeld. Begründung aus dem Call: wir wollen das Eintrag-Volumen nicht durch ein Pflicht-Telefonfeld drücken. Wer die Nummer freiwillig angibt, rechnet eher mit einem Anruf.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>05 · Lead-Kennzeichnung &amp; Pipedrive</h2>
+    <h3>Sauber als Ratgeber-Anfrage markieren</h3>
+    <ul class="bul">
+      <li><b>Tag <span class="pill">Ratgeber</span></b> auf jeden Lead aus dieser Automation setzen, damit wir die Guide-Downloader sauber von echten Beratungsanfragen trennen und sie in späteren Kampagnen gezielt aus- oder einschließen können.</li>
+      <li><b>Kontext in Pipedrive:</b> erkennbar machen, dass es eine <b>Guide-/Ratgeber-Anfrage</b> ist (nicht eine direkte Beratungsanfrage), damit Felix beim Kontakt die richtige Erwartungshaltung hat ("Sie haben unseren Guide heruntergeladen ...").</li>
+      <li><b>Telefonkontakt:</b> Rückrufe sollen über das <b>Festnetz</b> laufen, nicht übers Handy. Die Mails verlinken jetzt korrekt die Festnetznummer <code>+49 (0) 2253 5440092</code>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>06 · Links &amp; Variablen zum Einsetzen</h2>
+    <h3>Vor dem Versand befüllen</h3>
+    <ul class="bul">
+      <li><b>Download-Link:</b> in allen Mails steht der Platzhalter <code>{{GUIDE_DOWNLOAD_URL}}</code>. Durch die finale, gehostete PDF-URL des Guides ersetzen.</li>
+      <li><b>Beratungs-/Angebotsseite (CTA-Buttons):</b> <code>https://www.ft-workanddesign.de/angebot-anfragen/</code> (bereits hinterlegt).</li>
+      <li><b>Absender:</b> Felix Till · FT Work &amp; Design, <code>info@ft-workanddesign.de</code>. Reply-To auf dieselbe Adresse.</li>
+      <li><b>Assets:</b> liegen im Ordner <code>assets/</code> neben den Mail-Dateien (Logo-Bar, Guide-Visual, Felix-Foto, Lifestyle-/Hero-Bild). Beim Import als Inline-/gehostete Bilder übernehmen.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>07 · Vor dem Aktivieren prüfen</h2>
+    <h3>Kurze Checkliste</h3>
+    <ul class="bul chk">
+      <li>Download-Link <code>{{GUIDE_DOWNLOAD_URL}}</code> in allen 3 Mails ersetzt</li>
+      <li>Anrede-Fallback gesetzt und mit/ohne Vorname getestet</li>
+      <li>Telefonfeld im Formular auf optional gestellt</li>
+      <li>Tag <span class="pill">Ratgeber</span> wird automatisch gesetzt</li>
+      <li>Lead in Pipedrive als Guide-/Ratgeber-Anfrage erkennbar</li>
+      <li>Festnetznummer in allen Mails (kein Handy)</li>
+      <li>Bilder/Assets laden korrekt, Spam-/Render-Testversand an eine eigene Adresse</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>08 · Vorschau</h2>
+    <h3>So sehen die 3 Mails aus</h3>
+
+    <div class="mailcard">
+      <div class="meta">
+        <div class="when">Mail 1 · Tag 0 · sofort</div>
+        <div class="subj">Ihr Markisenguide für die Eifel</div>
+        <div class="pre">Hier ist Ihr Guide. Plus: Kostenlose Beratung, falls Sie unsicher sind.</div>
+        <div class="det"><b>Zweck:</b> Guide ausliefern, erster weicher Beratungsimpuls.</div>
+        <div class="det"><b>CTA:</b> Markisenguide herunterladen → <code>{{GUIDE_DOWNLOAD_URL}}</code></div>
+        <div class="det"><b>Datei:</b> <code>email1_download.html</code></div>
+      </div>
+      <div class="frame"><iframe src="email1_download.html" height="1480" scrolling="no" loading="lazy"></iframe></div>
+    </div>
+
+    <div class="mailcard">
+      <div class="meta">
+        <div class="when">Mail 2 · +2 Tage</div>
+        <div class="subj">Diese 3 Fehler kosten beim Markisenkauf am meisten</div>
+        <div class="pre">Wind, Regen, Ausfall: Worauf es vor dem Kauf wirklich ankommt.</div>
+        <div class="det"><b>Zweck:</b> Mehrwert aus dem Guide, dann Beratungsangebot.</div>
+        <div class="det"><b>CTA:</b> Kostenlose Beratung anfragen (Download dezent verlinkt).</div>
+        <div class="det"><b>Datei:</b> <code>email2_fehler.html</code></div>
+      </div>
+      <div class="frame"><iframe src="email2_fehler.html" height="1700" scrolling="no" loading="lazy"></iframe></div>
+    </div>
+
+    <div class="mailcard">
+      <div class="meta">
+        <div class="when">Mail 3 · +4 Tage</div>
+        <div class="subj">Welche Markise passt zu Ihrer Terrasse?</div>
+        <div class="pre">Gelenkarm, Kassette, Pergola oder Allwetter, kurz erklärt.</div>
+        <div class="det"><b>Zweck:</b> Orientierung nach Situation, klarer Beratungs-CTA.</div>
+        <div class="det"><b>CTA:</b> Kostenlose Beratung anfragen → Angebotsseite.</div>
+        <div class="det"><b>Datei:</b> <code>email3_typen.html</code></div>
+      </div>
+      <div class="frame"><iframe src="email3_typen.html" height="1600" scrolling="no" loading="lazy"></iframe></div>
+    </div>
+
+  </section>
+
+  <div class="foot">Internes Briefing · FT Work &amp; Design · Markisenguide E-Mail-Automation · Fragen an Valentin.</div>
+
+</div>
+</body></html>
