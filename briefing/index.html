@@ -46,8 +46,11 @@ code{background:#f1f3ef;border:1px solid var(--line);border-radius:5px;padding:2
 .mailcard .pre{font-size:14px;color:var(--mut);font-style:italic;margin-bottom:10px}
 .mailcard .det{font-size:14.5px;margin-bottom:8px}
 .mailcard .det b{color:var(--green)}
-.frame{flex:0 0 230px}
-.frame iframe{display:block;border:1px solid var(--line);border-radius:8px;width:230px;background:#F2F2F0;box-shadow:0 6px 18px rgba(27,37,31,.12)}
+.frame{flex:0 0 300px;text-align:center}
+.thumb{width:300px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#F2F2F0;box-shadow:0 6px 18px rgba(27,37,31,.12)}
+.thumb iframe{display:block;border:0;width:600px;transform:scale(.5);transform-origin:0 0}
+.openlink{display:inline-block;margin-top:10px;padding:9px 16px;font-size:13.5px;font-weight:700;color:#fff;background:var(--green2);border-radius:6px;text-decoration:none}
+.openlink:hover{background:var(--green)}
 .chk li{padding-left:30px}
 .chk li:before{content:"☐";position:absolute;left:2px;top:6px;background:none;width:auto;height:auto;color:var(--green2);font-size:15px}
 .foot{text-align:center;color:var(--mut);font-size:13px;padding:6px 20px}
@@ -58,7 +61,7 @@ code{background:#f1f3ef;border:1px solid var(--line);border-radius:5px;padding:2
 .gatebox input{width:100%;padding:13px 14px;font-size:15px;border:1px solid #ccced0;border-radius:7px;font-family:inherit}
 .gatebox button{width:100%;margin-top:12px;padding:13px;font-size:15px;font-weight:700;color:#fff;background:var(--green2);border:0;border-radius:7px;cursor:pointer;font-family:inherit}
 .gatebox .err{color:#b23;font-size:13px;margin-top:10px;min-height:16px}
-@media(max-width:620px){.mailcard{flex-direction:column}.frame{flex-basis:auto}.frame iframe{width:100%}}
+@media(max-width:620px){.mailcard{flex-direction:column}.frame{flex-basis:auto}}
 </style></head><body>
 <div class="gate" id="gate"><div class="gatebox">
   <div class="k">FT Work &amp; Design · Briefing</div>
@@ -192,7 +195,10 @@ if(sessionStorage.getItem('ftwd_ok')==='1'){document.addEventListener('DOMConten
         <div class="det"><b>CTA:</b> Markisenguide herunterladen → <a href="Markisenguide-Eifel.pdf" target="_blank">Markisenguide-Eifel.pdf</a></div>
         <div class="det"><b>Datei:</b> <code>email1_download.html</code></div>
       </div>
-      <div class="frame"><iframe src="email1_download.html" height="1480" scrolling="no" loading="lazy"></iframe></div>
+      <div class="frame">
+        <div class="thumb" style="height:740px"><iframe src="email1_download.html" height="1480" scrolling="no" loading="lazy"></iframe></div>
+        <a class="openlink" href="email1_download.html" target="_blank">Ganze E-Mail öffnen ↗</a>
+      </div>
     </div>
 
     <div class="mailcard">
@@ -204,7 +210,10 @@ if(sessionStorage.getItem('ftwd_ok')==='1'){document.addEventListener('DOMConten
         <div class="det"><b>CTA:</b> Kostenlose Beratung anfragen (Download dezent verlinkt).</div>
         <div class="det"><b>Datei:</b> <code>email2_fehler.html</code></div>
       </div>
-      <div class="frame"><iframe src="email2_fehler.html" height="1700" scrolling="no" loading="lazy"></iframe></div>
+      <div class="frame">
+        <div class="thumb" style="height:850px"><iframe src="email2_fehler.html" height="1700" scrolling="no" loading="lazy"></iframe></div>
+        <a class="openlink" href="email2_fehler.html" target="_blank">Ganze E-Mail öffnen ↗</a>
+      </div>
     </div>
 
     <div class="mailcard">
@@ -216,7 +225,10 @@ if(sessionStorage.getItem('ftwd_ok')==='1'){document.addEventListener('DOMConten
         <div class="det"><b>CTA:</b> Kostenlose Beratung anfragen → Angebotsseite.</div>
         <div class="det"><b>Datei:</b> <code>email3_typen.html</code></div>
       </div>
-      <div class="frame"><iframe src="email3_typen.html" height="1600" scrolling="no" loading="lazy"></iframe></div>
+      <div class="frame">
+        <div class="thumb" style="height:800px"><iframe src="email3_typen.html" height="1600" scrolling="no" loading="lazy"></iframe></div>
+        <a class="openlink" href="email3_typen.html" target="_blank">Ganze E-Mail öffnen ↗</a>
+      </div>
     </div>
 
   </section>
